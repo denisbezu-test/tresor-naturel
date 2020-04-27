@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr">
+<head>
+  <!--- Indications de base -->
+  <meta charset="utf-8">
+  <title> Trésor Naturel </title>
+  <meta name="description" content="Projet programmation web du semestre 6">
+  <!-- Métadonnées pour mobiles -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Styles CSS -->
+  <link rel="stylesheet" href="/views/css/base.css">
+  <link rel="stylesheet" href="/views/css/vendor.css">
+  <link rel="stylesheet" href="/views/css/main.css">
+  <!-- Script javascript associé (effets sur la page) -->
+  <script src="/views/js/modernizr.js"></script>
+  <!-- Favicon (icône dans la barre des favoris) -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+</head>
+
+<body class="ss-bg-white">
+<!-- Preloader (contenu affiché avant que la page ne charge) -->
+<div id="preloader">
+  <div id="loader" class="dots-fade">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+
+<div id="top" class="s-wrap site-wrapper">
+
+  <!-- Header du site -->
+  <header class="s-header">
+
+    <div class="header__top">
+      <div class="header__logo">
+        <a class="site-logo" href="/index.php">
+          <img src="/images/leaf.svg" alt="Homepage">Trésor Naturel.</img>
+        </a>
+      </div>
+
+      <!-- Toggles (type d'événement lié à un bouton) -->
+      <a href="#0" class="header__menu-toggle"><span>Menu</span></a>
+
+    </div>
+    <!-- Navigation -->
+    <nav class="header__nav-wrap">
+
+      <ul class="header__nav">
+        <li class="current"><a href="/index.php" title="">Accueil</a></li>
+        <li class="has-children">
+          <a href="#0" title="">Produits</a>
+          <ul class="sub-menu">
+            <li><a href="category.php">Tous les produits</a></li>
+            <li><a href="category.php?tri=type">Type de produits</a></li>
+            <li><a href="category.php?tri=application">Application</a></li>
+          </ul>
+        </li>
+        <li class="has-children">
+          <a href="#0" title="">Recettes</a>
+          <ul class="sub-menu">
+            <li><a href="recettes.php">Toutes les recettes</a></li>
+            <li><a href="recettes.php?tri=ingredients">Ingrédients</a></li>
+          </ul>
+        </li>
+        <li class="has-children">
+          <a href="#0" title="">Connexion</a>
+          <ul class="sub-menu">
+            <li><a href="/index.php?controller=login" title="">Connexion</a></li>
+            <li><a href="/index.php?controller=register" title="">Inscription</a></li>
+            <li><a href="/index.php?controller=user" title="">Mes informations</a></li>
+            <li><a href="laisseravis.php" title="">Laisser un avis</a></li>
+            <li><a href="/index.php?controller=login&action=logout" title="">Déconnexion</a></li>
+            <li><a href="/index.php?controller=register&action=showUnregister" title="">Désinscription</a></li>
+          </ul>
+        </li>
+        <li><a href="/index.php?controller=about" title="">A propos</a></li>
+        <li><a href="/index.php?controller=contact" title="">Contact</a></li>
+      </ul>
+
+      <ul class="header__social">
+        <li class="ss-facebook">
+          <a href="https://facebook.com/">
+            <span class="screen-reader-text">Facebook</span>
+          </a>
+        </li>
+        <li class="ss-twitter">
+          <a href="https://twitter.com/">
+            <span class="screen-reader-text">Twitter</span>
+          </a>
+        </li>
+        <li class="ss-instagram">
+          <a href="https://instagram.com/">
+            <span class="screen-reader-text">Instagram</span>
+          </a>
+        </li>
+        <li class="ss-pinterest">
+          <a href="https://pinterest.com/">
+            <span class="screen-reader-text">Pinterest</span>
+          </a>
+        </li>
+        <li class="ss-mail">
+          <a href="/index.php?controller=contact">
+            <span class="screen-reader-text">Email</span>
+          </a>
+        </li>
+      </ul>
+
+    </nav>
+
+  </header>

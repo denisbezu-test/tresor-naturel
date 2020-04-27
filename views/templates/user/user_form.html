@@ -1,0 +1,35 @@
+<form action="/index.php?controller=user&action=change"
+      method="POST"
+      enctype="multipart/form-data"><br>
+  <table>
+    <tbody>
+    <tr>
+      <th>Informations actuelles</th>
+      <th>Nouvelles informations</th>
+    </tr>
+    <tr>
+      <td>Pseudo : {login}</td>
+      <td><input type="text" name="login"></td>
+    </tr>
+    <tr>
+      <td>Mot de passe: </td>
+      <td><input type="password" name="password"></td>
+    </tr>
+    <tr>
+      <td>Confirmation mot de passe</td>
+      <td><input type="password" name="password_confirmation"></td>
+    </tr>
+    <tr>
+      <td>Avatar : <img src="images/avatars/{avatar_path}"></td>
+      <td>
+        <input type="hidden" name="max_file_size" value="1000000">
+        <input type="file" name="avatar">
+      </td>
+    </tr>
+    </tbody>
+  </table>
+  <center>
+    <input type="submit" name="S'inscrire" value="S'inscrire">
+    <input type="reset" name="Effacer" value="Effacer">
+  </center>
+</form>

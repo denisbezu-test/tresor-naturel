@@ -1,0 +1,30 @@
+<div>
+  Vous voulez vraiment supprimer votre compte?
+  <form action="/index.php?controller=register&action=doUnregister"
+        method="POST" enctype="multipart/form-data">
+    <br>
+    <table>
+      <tbody>
+      <tr>
+        <th>Identifiants</th>
+        <th>Valeurs</th>
+      </tr>
+      <tr>
+        <td>Pseudo :</td>
+        <td>{login}</td>
+      </tr>
+      <tr>
+        <td>Mot de passe (hashed):</td>
+        <td>{password}</td>
+      </tr>
+      <tr>
+        <td>Avatar :</td>
+        <td><img src="/images/avatars/{avatar_path}" alt=""></td>
+      </tr>
+      </tbody>
+    </table>
+    <center>
+      <input type="submit" name="Se désinscrire">
+    </center>
+  </form>
+</div>
