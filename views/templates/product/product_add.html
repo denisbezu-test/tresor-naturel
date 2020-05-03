@@ -1,0 +1,32 @@
+<div>
+  <form action="/index.php?controller=product&action=save"
+        enctype="multipart/form-data"
+        method="post">
+    <label for="">Nom</label>
+    <input type="text"
+           name="name"
+           value="{name}"/>
+    <label for="">Photo</label>
+    <input type="file" name="photo"/>
+    <label for="">Prix</label>
+    <input type="number"
+           name="price"
+           value="{price}"/>
+
+    <label for="">Application</label>
+    <select name="body">
+      <!-- BEGIN bodies -->
+      <option value="{bodies.value}">{bodies.name}</option>
+      <!-- END bodies -->
+    </select>
+
+    <label for="">Types</label>
+    <select name="type">
+      <!-- BEGIN types -->
+      <option value="{types.value}">{types.name}</option>
+      <!-- END types -->
+    </select>
+
+    <button type="submit" name="submit">Sauvegarder</button>
+  </form>
+</div>

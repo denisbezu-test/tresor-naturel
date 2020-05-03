@@ -1,0 +1,14 @@
+<div>
+  Veuillez sélectionner l'ingrédient que vous avez
+
+  <form action="/index.php?controller=recipe&action=ingredients"
+        method="post">
+    <!-- BEGIN ingredients -->
+    <input type="radio" name="ingredient" value="{ingredients.value}">
+    {ingredients.name}
+    <br>
+    <!-- END ingredients -->
+    <button class="align-center btn">Valider</button>
+  </form>
+</div>
+<br>

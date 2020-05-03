@@ -1,0 +1,36 @@
+<div>
+  <a class="btn"
+     href="/index.php?controller=product&action=add">Ajouter une article</a>
+  <table>
+    <tbody>
+    <tr>
+      <th><a href="/index.php?controller=product&sort=photo">Photo</a></th>
+      <th><a href="/index.php?controller=product&sort=name">Nom</a></th>
+      <th><a href="/index.php?controller=product&sort=price">Prix</a></th>
+      <th><a href="/index.php?controller=product&sort=body">Application</a></th>
+      <th><a href="/index.php?controller=product&sort=type">Type </a></th>
+      <th><a href="/index.php?controller=product&sort=score">Note</a></th>
+      <th>Actions</th>
+    </tr>
+    <!-- BEGIN article -->
+    <tr>
+      <td>{article.photo}</td>
+      <td>{article.name}</td>
+      <td>{article.price}</td>
+      <td>{article.body}</td>
+      <td>{article.type}</td>
+      <td>{article.score}</td>
+      <td>
+        <a class="btn"
+             href="/index.php?controller=product&action=edit&id={article.id}">Edit</a>
+        <form action="/index.php?controller=product&action=delete"
+              method="post">
+          <input type="hidden" name="id" value="{article.id}">
+          <button type="submit" class="btn">Delete</button>
+        </form>
+      </td>
+    </tr>
+    <!-- END article -->
+    </tbody>
+  </table>
+</div>

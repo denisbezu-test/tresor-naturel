@@ -1,0 +1,22 @@
+<div>
+  <form action="/index.php?controller=recipe&action=save"
+        method="post">
+    <label for="">Nom</label>
+    <input type="text"
+           name="name"
+           value=""/>
+    <label for="">Temps</label>
+    <input type="number"
+           name="time"
+           value=""
+    />
+    <label for="">Ingrédients</label>
+    <select name="ingredients">
+      <!-- BEGIN ingredients -->
+      <option value="{ingredients.value}">{ingredients.name}</option>
+      <!-- END ingredients -->
+    </select>
+
+    <button type="submit" name="submit">Sauvegarder</button>
+  </form>
+</div>
